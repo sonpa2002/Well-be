@@ -1,0 +1,406 @@
+@font-face {
+font-family: "mon-900";
+src: url("../font/Montserrat/static/Montserrat-Black.ttf") format("truetype");
+}
+@font-face {
+font-family: "mon-i-900";
+src: url("../font/Montserrat/static/Montserrat-BlackItalic.ttf") format("truetype");
+}
+@font-face {
+font-family: "mon-800";
+src: url("../font/Montserrat/static/Montserrat-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+font-family: "mon-i-800";
+src: url("../font/Montserrat/static/Montserrat-ExtraBoldItalic.ttf") format("truetype");
+}
+@font-face {
+font-family: "mon-700";
+src: url("../font/Montserrat/static/Montserrat-Bold.ttf") format("truetype");
+}
+@font-face {
+font-family: "mon-i-700";
+src: url("../font/Montserrat/static/Montserrat-BoldItalic.ttf") format("truetype");
+}
+@font-face {
+font-family: "mon-600";
+src: url("../font/Montserrat/static/Montserrat-SemiBold.ttf") format("truetype");
+}
+@font-face {
+font-family: "mon-i-600";
+src: url("../font/Montserrat/static/Montserrat-SemiBoldItalic.ttf") format("truetype");
+}
+@font-face {
+font-family: "mon-500";
+src: url("../font/Montserrat/static/Montserrat-Medium.ttf") format("truetype");
+}
+@font-face {
+font-family: "mon-i-500";
+src: url("../font/Montserrat/static/Montserrat-MediumItalic.ttf") format("truetype");
+}
+@font-face {
+font-family: "mon-400";
+src: url("../font/Montserrat/static/Montserrat-Regular.ttf") format("truetype");
+}
+@font-face {
+font-family: "mon-i-400";
+src: url("../font/Montserrat/static/Montserrat-RegularItalic.ttf") format("truetype");
+}
+@font-face {
+font-family: "mon-300";
+src: url("../font/Montserrat/static/Montserrat-Light.ttf") format("truetype");
+}
+@font-face {
+font-family: "mon-i-300";
+src: url("../font/Montserrat/static/Montserrat-LightItalic.ttf") format("truetype");
+}
+@font-face {
+font-family: "mon-200";
+src: url("../font/Montserrat/static/Montserrat-ExtraLight.ttf") format("truetype");
+}
+@font-face {
+font-family: "mon-i-200";
+src: url("../font/Montserrat/static/Montserrat-ExtraLightItalic.ttf") format("truetype");
+}
+@font-face {
+font-family: "mon-100";
+src: url("../font/Montserrat/static/Montserrat-Thin.ttf") format("truetype");
+}
+@font-face {
+font-family: "mon-i-100";
+src: url("../font/Montserrat/static/Montserrat-ThinItalic.ttf") format("truetype");
+}
+
+@font-face {
+font-family: "play-900";
+src: url("../font/Playfair_Display/static/PlayfairDisplay-Black.ttf") format("truetype");
+}
+@font-face {
+font-family: "play-i-900";
+src: url("../font/Playfair_Display/static/PlayfairDisplay-BlackItalic.ttf") format("truetype");
+}
+@font-face {
+font-family: "play-800";
+src: url("../font/Playfair_Display/static/PlayfairDisplay-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+font-family: "play-i-800";
+src: url("../font/Playfair_Display/static/PlayfairDisplay-ExtraBoldItalic.ttf") format("truetype");
+}
+@font-face {
+font-family: "play-700";
+src: url("../font/Playfair_Display/static/PlayfairDisplay-Bold.ttf") format("truetype");
+}
+@font-face {
+font-family: "play-i-700";
+src: url("../font/Playfair_Display/static/PlayfairDisplay-BoldItalic.ttf") format("truetype");
+}
+@font-face {
+font-family: "play-600";
+src: url("../font/Playfair_Display/static/PlayfairDisplay-SemiBold.ttf") format("truetype");
+}
+@font-face {
+font-family: "play-i-600";
+src: url("../font/Playfair_Display/static/PlayfairDisplay-SemiBoldItalic.ttf") format("truetype");
+}
+@font-face {
+font-family: "play-500";
+src: url("../font/Playfair_Display/static/PlayfairDisplay-Medium.ttf") format("truetype");
+}
+@font-face {
+font-family: "play-i-500";
+src: url("../font/Playfair_Display/static/PlayfairDisplay-MediumItalic.ttf") format("truetype");
+}
+@font-face {
+font-family: "play-400";
+src: url("../font/Playfair_Display/static/PlayfairDisplay-Regular.ttf") format("truetype");
+}
+@font-face {
+font-family: "play-i-400";
+src: url("../font/Playfair_Display/static/PlayfairDisplay-RegularItalic.ttf") format("truetype");
+}
+*,
+*:before,
+*:after {
+box-sizing: border-box;
+-webkit-box-sizing: border-box;
+}
+
+html {
+font-family: "fw-400";
+font-size: 14px;
+line-height: 1.5;
+scroll-behavior: smooth;
+color: #333333;
+}
+
+:root{
+    --darkGreen: #1E4B3D;
+    --greenPattel: #547668;
+    --lightGreen: #C0CBBE;
+    --blackgray: #3D3D3D;
+    --primaryColor: #31735E;
+    --secondaryColor: #4BA35B;
+    --black: #252525;
+    --backgroundColor: #FDF4EFE0;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.prevent-scroll {
+overflow: hidden;
+}
+
+h1{
+    font-family: 'mon-400';
+    font-size: 42px;
+    letter-spacing: -2%;
+}
+
+h2{
+    font-family: 'mon-400';
+    font-size: 32px;
+    letter-spacing: -2%;
+}
+
+h3{
+    font-family: 'mon-400';
+    font-size: 28px;
+    letter-spacing: -2%;
+}
+
+p{
+    font-family: 'mon-400';
+    font-size: 14px;
+    letter-spacing: -2%;
+}
+
+.typography{
+    font-family: 'play-700';
+    font-size: 32px;
+    color: var(--primaryColor);
+}
+
+.title{
+    font-family: 'play-700';
+    font-size: 68px;
+    color: var(--primaryColor);
+}
+
+
+.subtitle{
+    font-family: 'play-400';
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1400px) {
+    .title{
+        font-size: 58px;       
+    }
+    .subtitle{
+        font-family: 'play-400';
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .title{
+        font-size: 52px;       
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .title{
+        font-size: 48px;       
+    }
+    .subtitle{
+        font-family: 'play-400';
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .title{
+        font-size: 40px;       
+    }
+    .subtitle{
+        font-family: 'play-400';
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .title{
+        font-size: 32px;       
+    }
+
+    .subtitle{
+        font-family: 'play-400';
+        font-size: 14px;
+    }
+    
+}
+
+.titleBox{
+    font-family: 'play-700';
+    font-size: 18px;
+    letter-spacing: -2%;
+    color: var(--blackgray);
+}
+
+.subtitleBox{
+    font-family: 'play-400';
+    font-size: 14px;
+    letter-spacing: -4%;
+    color: var(--blackgray);
+}
+.ads-slider{
+    /* display: none; */
+    visibility: hidden;
+}
+.ads-slider-active{
+    /* display: block; */
+    visibility: visible;
+}
+
+.Button{
+    padding: 10px 30px 10px 30px;
+    border-radius: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+}
+
+.primaryButton{
+    padding: 10px 30px 10px 30px;
+    border-radius: 24px;
+    border: 1px solid var(--primaryColor);
+    background-color: var(--primaryColor);
+    color: white;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.secondaryButton{
+    padding: 10px 30px 10px 30px;
+    border-radius: 24px;
+    border: 1px solid var(--secondaryColor);
+    background-color: var(--secondaryColor);
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+.wrapper{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.Adv__btn{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+}
+
+.Adv__btn .bg{
+    transition: all 0.5s ease;
+}
+
+.Adv__btn .bg:hover{
+    opacity: 0.7;
+}
+
+
+.main{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pagePadding{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'mon-400';
+    color: black;
+}
+
+input{
+    font-family: 'mon-400';
+    outline: none; 
+    border: none;
+    width: 100%;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.bg__full--firstColor{
+    background-color: var(--backgroundColor);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px 60px 20px;
+}
+
+.bg__full--secondColor{
+    background-color: var(--primaryColor);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px 60px 20px;
+}
+
+.bg__full--whiteColor{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px 60px 20px;
+}
+
+@media screen and (max-width: 1000px){
+    .bg__full--firstColor{
+        padding: 40px 20px 40px 20px;
+    }
+    
+    .bg__full--secondColor{
+        padding: 40px 20px 40px 20px;
+    }
+    
+    .bg__full--whiteColor{
+        padding: 40px 20px 40px 20px;
+    }
+}
+
+.star{
+    color: rgba(252, 131, 31, 1);
+    display: flex;
+    gap: 0.2rem;
+    align-items: center;
+}
