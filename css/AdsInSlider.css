@@ -1,0 +1,14 @@
+.ads-slider{
+    display: none;
+    /* visibility: hidden; */
+}
+.ads-slider-active{
+    display: block;
+    /* visibility: visible; */
+}
+@media screen and (max-width: 500px) {
+    .ads-slider-active{
+        display: none;
+        /* visibility: visible; */
+    }
+}

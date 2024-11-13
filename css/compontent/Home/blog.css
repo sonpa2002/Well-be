@@ -1,0 +1,220 @@
+:root{
+    --darkGreen: #1E4B3D;
+    --greenPattel: #547668;
+    --lightGreen: #C0CBBE;
+    --blackgray: #3D3D3D;
+    --primaryColor: #31735E;
+    --secondaryColor: #4BA35B;
+    --black: #252525;
+    --backgroundColor: #FDF4EFE0;
+}
+
+.blog{
+  width: 100%;
+  height: 600px;
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 1400px) {
+  .blog{
+    width: 100%;
+    height: 600px;
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 40px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .blog{
+    width: 100%;
+    height: 100%;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 40px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .blog{
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .blog{
+    padding: 0;
+  }
+}
+
+.blog__content--right,
+.blog__content--left{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  gap: 2rem;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+
+@media screen and (max-width: 800px) {
+  .blog__content--right,
+  .blog__content--left{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.blog__content--left .left__box--content{
+  flex: 1;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.blog__content--left .textContent{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+  padding: 20px 10px;
+}
+
+.blog__content--left .textContent .textContent--title{
+  font-family: 'play-700';
+  font-size: 52px;
+  line-height: 70px;
+}
+
+.blog__content--left .textContent .subtitleBox{
+  font-size: 18px;
+}
+
+.blog__content--left .textContent .secondaryButton{
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+  font-size: 18px;
+  width: 180px;
+}
+
+.blog__content--left .textContent .secondaryButton:hover{
+  background-color: var(--primaryColor);
+}
+
+
+.blog__content--right .right__box--image,
+.blog__content--left .left__box--image{
+  flex: 1;
+  width: 100%;
+  height: 600px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+@media screen and (max-width: 800px) {
+  .blog__content--right .right__box--image,
+  .blog__content--left .left__box--image{
+  flex: 1;
+  width: 525px;
+  height: 525px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+}
+
+@media screen and (max-width: 600px) {
+  .blog__content--right .right__box--image,
+  .blog__content--left .left__box--image{
+  flex: 1;
+  width: 380px;
+  height: 380px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+}
+
+@media screen and (max-width: 500px) {
+  .blog__content--right .right__box--image,
+  .blog__content--left .left__box--image{
+  flex: 1;
+  width: 325px;
+  height: 325px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+}
+
+.blog__content--right .right__box--image .buttonDiv,
+.blog__content--left .left__box--image .buttonDiv{
+  position: absolute;
+    top: 10px;
+    z-index: 10;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 10px;
+    align-items: center;
+    transition: all 0.3s ease;   
+}
+
+.buttonDiv button{
+  transition: all 0.3s ease;
+}
+
+.blog__content--right .right__box--image .buttonDiv button:hover,
+.blog__content--left .left__box--image .buttonDiv button:hover{
+  background-color: var(--secondaryColor);
+}
+
+.blog__content--right .right__box--image img,
+.blog__content--left .left__box--image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blog .content__box--text{
+  position: absolute;
+  bottom: 10px;
+  z-index: 10;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.blog .content__box--text
+.content__wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  padding: 20px;
+  gap: 1rem;
+}
